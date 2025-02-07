@@ -1,12 +1,13 @@
-def pertence_fibonacci(n):
-    a, b = 0, 1
-    while a < n:
-        a, b = b, a + b
-    return a == n
-
-# Entrada do usuário
-numero = int(input("Informe um número: "))
-if pertence_fibonacci(numero):
-    print(f"{numero} pertence à sequência de Fibonacci.")
+n = int(input())
+a = 0
+b = 1
+if n == 1:
+  print(a)
+elif n == 2:
+  print(b)
 else:
-    print(f"{numero} não pertence à sequência de Fibonacci.")
+  for i in range(3,n+1):  # i = 3..n-1
+    c = a + b
+    a = b
+    b = c
+  print(b)
