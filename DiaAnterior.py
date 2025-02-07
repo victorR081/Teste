@@ -1,3 +1,4 @@
+# 3 entradas, dia, mes e ano. Digite os 3 e ele volta na sáida o dia anterior.
 dia = int(input())
 mes = int(input())
 ano = int(input())
